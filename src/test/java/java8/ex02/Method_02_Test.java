@@ -20,7 +20,7 @@ public class Method_02_Test {
         // TODO la méthode retourne une chaîne de la forme [<nb_personnes> persons]
         // TODO exemple de résultat : "[14 persons]", "[30 persons]"
         
-        default String format() {
+       public default String format() {
         	return findAll().size() + " persons";
         	
         }
