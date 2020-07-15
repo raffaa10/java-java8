@@ -21,7 +21,7 @@ public class Method_02_Test {
         // TODO exemple de résultat : "[14 persons]", "[30 persons]"
         
        public default String format() {
-        	return findAll().size() + " persons";
+        	return "[" + findAll().size() + " persons]";
         	
         }
     }
@@ -43,7 +43,7 @@ public class Method_02_Test {
         // TODO l'implémentation réutilise la méthode format() de l'interface
         
         public String format() {
-        	return findAll().size() + " persons";
+        	return "DaoA" + IDao.super.format();
         }
     }
     // end::DaoA[]
