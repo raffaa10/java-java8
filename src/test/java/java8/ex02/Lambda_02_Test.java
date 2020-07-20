@@ -38,7 +38,7 @@ public class Lambda_02_Test {
         // TODO transformer la liste de personnes en liste de comptes
         // TODO tous les objets comptes ont un solde à 100 par défaut
         
-        PersonToAccountMapper mapper = p -> Account(p, 100);
+        PersonToAccountMapper mapper = p -> new Account(p, 100);
 
         
         List<Account> result = map(personList, mapper);
@@ -50,8 +50,5 @@ public class Lambda_02_Test {
         }
     }
     // end::test_map_person_to_account[]
-	protected Account Account(Person p, int i) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 }
